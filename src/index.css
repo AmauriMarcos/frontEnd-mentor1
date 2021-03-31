@@ -1,13 +1,23 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+/* - Mobile: 375px
+- Desktop: 1440px */
+
+/* ### Primary
+
+- White: #fff;
+- Black: #000;
+- Dark Gray: hsl(0, 0%, 55%)
+- Very Dark Gray: hsl(0, 0%, 41%) */
+
+/* ### Fonts
+
+- Family: [Alata](https://fonts.google.com/specimen/Alata)
+- Weight: 400
+
+- Family: [Josefin Sans](https://fonts.google.com/specimen/Josefin+Sans)
+- Weight: 300 */
