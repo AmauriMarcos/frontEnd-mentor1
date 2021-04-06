@@ -1,0 +1,23 @@
+@import '../../styles/global.scss';
+
+.Header{
+    padding: 3% 12%;
+    height: 100vh;
+    background: linear-gradient(to right, rgba(0,0,0,.5), rgba(0,0,0,.2)), url(../../assets/images/desktop/image-hero.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__brandNavbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__hero{  
+        border: 2px solid $light-color;
+        width: 57%;
+        padding: 2rem;
+        transform: translateY(11.5rem);
+    }
+}

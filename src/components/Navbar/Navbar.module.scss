@@ -1,0 +1,35 @@
+@import '../../styles/global.scss';
+
+
+.Navbar{
+  
+    &__list{
+        @include centered(row);
+        list-style: none;
+
+        & li:not(:last-child){
+            margin-right: 1.8rem;
+        }
+
+        & li a{
+            text-decoration: none;
+            position: relative;
+
+            &::after{
+                content:"";
+                width: 0;
+                position: absolute;
+                bottom: -35%;
+                left: 0;
+                height: 3px;
+                background-color: $light-color;
+                transition: width .2s;
+            }
+
+            &:hover::after{
+                width: 100%;
+            }
+        }
+    }
+}
+

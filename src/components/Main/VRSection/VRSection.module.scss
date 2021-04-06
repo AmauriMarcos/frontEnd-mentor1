@@ -1,0 +1,64 @@
+@import '../../../styles/global.scss';
+
+.VRSection{
+    padding: 6.3% 12%;
+    display: flex;
+    position: relative;
+
+    @include md{
+        padding: 0;
+        flex-direction: column;
+    }
+
+    &__boxImg{
+        @include md{
+            width: 100%;
+            padding:12% 4%;
+            display: flex;
+            justify-content: center;
+            
+        }
+
+        & .image{
+            @include md{
+                width: 100%;
+                height: auto;
+                margin: 0 auto;
+            }
+        }
+
+        & img{
+
+           
+        }
+    }
+
+    &__boxText{
+        background-color: #fff;
+        position: absolute;
+        top: 18rem;
+        right: 14rem;
+        height: 400px;
+        width: 40%;
+        padding: 3rem 5rem;
+        display: flex;
+       /*  justify-content: space-evenly; */
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+
+        @include md{
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 0 6%;
+            height: 0xxxx;
+        }
+
+        & h2{
+            margin-bottom: 1.3rem !important;
+        }
+
+    }
+}

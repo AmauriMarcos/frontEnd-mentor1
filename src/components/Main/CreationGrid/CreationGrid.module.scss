@@ -1,0 +1,76 @@
+@import '../../../styles/global.scss';
+
+.CreationGrid{
+    @include centered(column);
+    padding: 0 12%;
+
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 6% 0;
+    }
+
+    &__grid{
+        
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+    }
+}
+
+.button{
+    @include button;
+    cursor: pointer;
+
+    &:hover{
+        background-color: rgb(3, 3, 3);
+        color: $light-color;
+    }
+}
+
+.ImgBox{
+    width: 100%;
+    position: relative;
+
+    
+    &:hover > figcaption{
+        color: black;
+    }
+
+    & img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+
+    & figcaption{
+        position: absolute;
+        bottom: 2.2rem;
+        left: 2.4rem;
+        width: 65%;
+        z-index: 10;
+        cursor: pointer;
+
+    }   
+}
+
+.layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, rgba(0,0,0,.2), rgba(0,0,0,.3));
+    z-index: 5;
+    width: 264.64px;
+    height: 469.2px;
+    cursor: pointer;
+
+
+    &:hover{
+        background: rgba(255,255,255,.5);
+    }
+
+    
+}

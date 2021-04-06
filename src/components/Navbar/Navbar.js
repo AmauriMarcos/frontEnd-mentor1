@@ -1,12 +1,10 @@
 import React from 'react';
+import styles from './Navbar.module.scss';
 
 const Navbar = () =>{
     return(
-        <nav>
-            <div>
-                <p>loopstudios</p>
-            </div>
-            <ul>
+        <nav className={styles.Navbar}>
+            <ul className={styles.Navbar__list}>
                 <li>
                     <a href="#">About</a>
                 </li>
