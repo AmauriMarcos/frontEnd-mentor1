@@ -2,13 +2,26 @@
 
 
 .Navbar{
+    @include md{
+        width: 100%;
+    }
   
     &__list{
         @include centered(row);
         list-style: none;
 
+        @include md{
+            @include centered(column);
+            text-align: center;
+            
+        }
+
         & li:not(:last-child){
             margin-right: 1.8rem;
+
+            @include md{
+                margin: .5rem 0;
+            }
         }
 
         & li a{
@@ -33,3 +46,18 @@
     }
 }
 
+.listHeaderNavbar{
+
+    @include md{
+        display: none;
+        visibility: hidden;
+    }
+}
+
+.mobileListFooterNavbar{
+
+    @include md{
+        display: block;
+        visibility: show;
+    }
+}

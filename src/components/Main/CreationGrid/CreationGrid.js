@@ -17,7 +17,7 @@ const CreationGrid = () =>{
         <div className={styles.CreationGrid}>
             <div className={styles.CreationGrid__header}>
                 <h2>Our Creations</h2>
-                <button className={styles.button}>See all</button>
+                <button className={`${styles.button} ${styles.standartButton}`}>See all</button>
             </div>        
             <div className={styles.CreationGrid__grid}>
                 {imgArr.map((nameImg) =>{
@@ -30,7 +30,8 @@ const CreationGrid = () =>{
                         
                     )
                 })}
-            </div>   
+            </div> 
+            <button className={`${styles.button} ${styles.mobileButton}`}>See all</button>  
         </div>
     )
 }

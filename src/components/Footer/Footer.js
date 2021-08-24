@@ -16,7 +16,9 @@ const Footer = () =>{
                     <div className={styles.logo}>
                         <Logo/>
                     </div>
-                    <Navbar/>
+                    <div >
+                        <Navbar className={styles.footerNavbar}/>
+                    </div>                  
                 </div>
                 <div className={styles.socialMedias}>
                     <ul className={styles.socialMedias__list}>

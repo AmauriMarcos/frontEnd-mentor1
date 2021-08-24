@@ -8,6 +8,11 @@
     background-size: cover;
     background-repeat: no-repeat;
 
+    @include md{
+        padding: 0;
+        
+    }
+
     &__brandNavbar{
         display: flex;
         justify-content: space-between;
@@ -19,5 +24,19 @@
         width: 57%;
         padding: 2rem;
         transform: translateY(11.5rem);
+
+        @include md{
+            width: auto;
+            margin: 2rem;
+            transform: translateY(9.5rem);
+            padding: 2.6rem;
+        }
+    }
+}
+.mobileHeroTitle{
+
+    @include md{
+        font-size: 2.6rem !important;
+        
     }
 }

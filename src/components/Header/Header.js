@@ -12,7 +12,7 @@ const Hero = () =>{
                 <Navbar/>
             </div>          
             <div className={styles.Header__hero} >
-                <h1>Immersive <br></br> Experiences  <br></br>That Deliver</h1>
+                <h1 className={styles.mobileHeroTitle}>Immersive <br></br> Experiences  <br></br>That Deliver</h1>
             </div>
         </header>
     )

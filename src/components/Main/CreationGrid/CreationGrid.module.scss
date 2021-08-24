@@ -4,6 +4,10 @@
     @include centered(column);
     padding: 0 12%;
 
+    @include md{
+        padding: 0;
+    }
+
     &__header{
         display: flex;
         justify-content: space-between;
@@ -17,6 +21,13 @@
         width: 100%;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 2rem;
+
+        @include md{
+          /*   @include centered(column); */
+          grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            height: auto;
+            
+        }
     }
 }
 
@@ -34,6 +45,11 @@
     width: 100%;
     position: relative;
 
+
+    @include md{
+        max-height: 186px;
+    }
+
     
     &:hover > figcaption{
         color: black;
@@ -44,7 +60,13 @@
         width: 100%;
         height: 100%;
         border: none;
+
+        @include md{
+            height: 100%;
+        }
+
     }
+    
 
     & figcaption{
         position: absolute;
@@ -53,7 +75,8 @@
         width: 65%;
         z-index: 10;
         cursor: pointer;
-
+        
+       
     }   
 }
 
@@ -67,10 +90,35 @@
     height: 469.2px;
     cursor: pointer;
 
+    @include md{
+        display: none;
+        opacity: 1;
+        visibility: hidden;
+    }
 
     &:hover{
         background: rgba(255,255,255,.5);
     }
 
     
+}
+
+//Responsive classes
+
+.standartButton{
+
+    @include md{
+        display: none;
+    }
+}
+
+.mobileButton{
+    opacity: 0;
+    
+    @include md{
+        margin: 2rem 0;
+        padding: .5rem 0 !important;
+        opacity: 1;
+    }
+   
 }

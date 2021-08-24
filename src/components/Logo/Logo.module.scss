@@ -4,5 +4,9 @@
     font-weight: 900;
     font-family: $logo;
     color: $light-color;
-    font-size: 1.8rem
+    font-size: 1.8rem;
+
+    @include md{
+        margin: 2rem 0 0 2rem;
+    }
 }
